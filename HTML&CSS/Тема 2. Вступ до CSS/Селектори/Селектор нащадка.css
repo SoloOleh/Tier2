@@ -1,0 +1,31 @@
+/* 
+
+<a href="">Читайте наш блог!</a>
+
+<ul>
+  <li><a href="">Spotify</a></li>
+  <li><a href="">Netflix</a></li>
+</ul>
+
+<ul class="social-links">
+  <li><a href="">Twitter</a></li>
+  <li><a href="">Instagram</a></li>
+  <li><a href="">Facebook</a></li>
+</ul> 
+
+*/
+
+/* Застосовується до всіх посилань у документі */
+a {
+    color: tomato;
+}
+
+/* Застосовується до посилань, які лежать усередині неупорядкованих списків */
+ul a {
+    color: violet;
+}
+
+/* Застосовується лише до посилань, що лежать усередині тега з класом social-links */
+.social-links a {
+    color: cyan;
+}

@@ -1,0 +1,17 @@
+/* 
+<ul class="social-links">
+  <li><a class="link" href="<https://twitter.com>">Twitter</a></li>
+  <li><a class="link" href="<https://www.instagram.com>">Instagram</a></li>
+  <li><a class="link" href="<https://www.facebook.com>">Facebook</a></li>
+</ul> 
+*/
+
+.social-links .link {
+    color: teal;
+}
+
+/* Два і більше селекторів для одного правила поділяються комою */
+.social-links .link:hover,
+.social-links .link:focus {
+    color: orange;
+}
