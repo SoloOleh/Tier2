@@ -1,0 +1,9 @@
+/* Яким буде колір тексту абзаців? */
+p {
+    color: blue;
+    background-color: orange;
+}
+
+p {
+    color: teal;
+}

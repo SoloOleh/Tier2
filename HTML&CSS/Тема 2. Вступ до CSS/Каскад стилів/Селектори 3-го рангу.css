@@ -1,0 +1,39 @@
+/* Специфічність - 0 0 1 0 */
+.post-title {
+    color: green;
+}
+
+/* Специфічність - 0 0 1 1 */
+.post>h1 {
+    color: red;
+}
+
+/* ✅ Специфічність - 0 0 2 0 */
+.post>.post-title {
+    color: orange;
+}
+
+/* Специфічність - 0 0 0 1 */
+a {
+    color: green;
+}
+
+/* Специфічність - 0 0 1 0 */
+.post-link {
+    color: orange;
+}
+
+/* Специфічність - 0 0 1 1 */
+a.post-link {
+    color: blue;
+}
+
+/* Специфічність - 0 0 2 0 */
+.post>.post-link {
+    color: red;
+}
+
+/* ✅ Специфічність - 0 0 2 1 */
+.post>a.post-link {
+    color: brown;
+}

@@ -1,0 +1,9 @@
+/* Специфичность - 0 0 1 0 */
+.post-title {
+    color: green;
+}
+
+/* ✅ Специфичность - 0 1 0 0 */
+#title {
+    color: orange;
+}

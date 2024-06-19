@@ -1,0 +1,12 @@
+.post {
+    color: green;
+}
+
+.post-link {
+    color: currentColor;
+}
+
+.link {
+    color: orangered;
+    border: 1px solid currentcolor;
+}

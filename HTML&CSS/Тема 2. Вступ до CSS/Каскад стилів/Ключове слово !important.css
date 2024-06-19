@@ -1,0 +1,15 @@
+p {
+    color: orange;
+}
+
+p#text-id.text {
+    color: blue;
+}
+
+p {
+    color: orange !important;
+}
+
+p#text-id.text {
+    color: blue;
+}
