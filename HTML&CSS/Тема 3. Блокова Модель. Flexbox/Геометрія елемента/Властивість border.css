@@ -1,0 +1,28 @@
+/* border-width: значення;
+border-style: значення;
+border-color: значення; */
+
+/* border-top: ширина стиль колір;
+border-right: ширина стиль колір;
+border-bottom: ширина стиль колір;
+border-left: ширина стиль колір; */
+/* 
+.box {
+    width: 200px;
+    height: 200px;
+    border: 5px solid orangered;
+} */
+
+.box:hover {
+    border-color: cyan;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+
+    border-top: 3px solid blue;
+    border-right: 5px dotted black;
+    border-bottom: 7px dashed palevioletred;
+    border-left: 9px double green;
+}

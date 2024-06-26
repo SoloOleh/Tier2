@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif;
+}
+
+.text {
+    border: 2px dashed #2196F3;
+    padding: 15px;
+    margin: 20px;
+}

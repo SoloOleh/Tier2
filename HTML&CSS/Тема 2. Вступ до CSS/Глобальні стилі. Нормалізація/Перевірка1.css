@@ -1,0 +1,44 @@
+body {
+    font-family: "Poppins", sans-serif;
+    color: #212121;
+    background-color: #fafafa;
+    font-size: 14px;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+}
+
+
+.page-nav .link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.page-title {
+    font-size: 32px;
+    /* font-family: "Oswald", sans-serif; */
+    text-align: center;
+    line-height: 1.333;
+    letter-spacing: 3px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 500;
+    /* font-family: "Oswald", sans-serif; */
+    text-align: center;
+    line-height: 1.333;
+    letter-spacing: 1px;
+}
+
+.club-list .title {
+    font-size: 16px;
+    /* font-family: "Oswald", sans-serif; */
+    text-transform: uppercase;
+    line-height: 1.333;
+}
+
+ul {
+    list-style-type: none;
+}

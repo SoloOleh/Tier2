@@ -1,0 +1,12 @@
+.outer-box {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+}
+
+.inner-box {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    background-color: palevioletred;
+}

@@ -1,0 +1,13 @@
+body {
+    font-family: "Poppins", sans-serif;
+    color: #212121;
+    font-size: 14px;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

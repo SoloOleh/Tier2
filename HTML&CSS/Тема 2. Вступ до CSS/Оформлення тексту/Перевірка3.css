@@ -1,0 +1,28 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.page-title {
+    font-size: 24px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    line-height: 1.333;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    line-height: 1.333;
+}
+
+.club-list .title {
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.333;
+}
+.section-text {
+    line-height: 1.5;
+}

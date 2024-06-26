@@ -1,0 +1,23 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.page-header {
+    background-color: #bdbdbd;
+}
+
+.page-nav .link {
+    color: #00bcd4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.page-nav .link:hover,
+.page-nav .link:focus {
+    color: #18ffff;
+}
+
+.page-nav .link:active {
+    color: #212121;
+}

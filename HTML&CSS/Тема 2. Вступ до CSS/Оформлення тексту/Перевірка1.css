@@ -1,0 +1,13 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.club-list .link {
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.club-list .link:hover, .club-list .link:focus {
+    text-decoration: underline;
+}

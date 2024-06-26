@@ -1,0 +1,12 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.page-title {
+    font-size: 32px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    line-height: 1.333;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px #212121;
+}

@@ -1,0 +1,25 @@
+.link {
+    display: inline-block;
+    padding: 16px 32px;
+
+    border-radius: 3px;
+    background-color: teal;
+    color: white;
+
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+body {
+    font-size: 32px;
+}
+
+button,
+a,
+span {
+    border: 1px solid #2a2a2a;
+}

@@ -1,0 +1,110 @@
+/* Підключення нормалізатора стилів */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css');
+
+/* Підключення шрифтів з Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
+
+
+:root {
+    --iris: #4d5ae5;
+    --ocean: #404bbf;
+    --navy-blue: #2e2f42;
+    --green: #31d0aa;
+    --slate: #434455;
+    --light-slate: #8e8f99;
+    --cornflower: #e7e9fc;
+    --cloud: #f4f4fd;
+    --navy-blue-modal: rgba(46, 47, 66, 0.4);
+    --grey: rgba(46, 47, 66, 0.7);
+    --white: #fff;
+    --dairy: #fcfcfc;
+}
+
+/* Основні стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #fff;;
+}
+
+header,
+footer,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+button {
+    background-color: #00BFFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Стилі для хедера */
+header {
+    background-color: #F0F0F0;
+}
+
+nav a:hover,
+address a:hover {
+    color: #555555;
+}
+
+/* Стилі для секції "Our Team" */
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 264px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.team-member p {
+    color: #666666;
+}
+
+/* Стилі для секції "Our Portfolio" */
+.portfolio-item {
+    border: 1px solid #E0E0E0;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-item p {
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+

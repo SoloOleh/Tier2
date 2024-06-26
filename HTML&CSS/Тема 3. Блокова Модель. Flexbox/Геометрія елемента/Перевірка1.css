@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #212121;
+    font-size: 14px;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.page-header {
+    background-color: #e0e0e0;
+    padding: 16px 0;
+}
+
+.page-nav .link {
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.page-nav {
+    padding: 0;
+}

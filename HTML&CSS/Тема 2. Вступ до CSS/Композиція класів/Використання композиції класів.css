@@ -1,0 +1,20 @@
+/* Загальні стилі та стандартні стилі для всіх типів оповіщень */
+.alert {
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+}
+
+/* Специфічні стилі для
+кожного типу оповіщень */
+.success {
+    color: green;
+}
+
+.warning {
+    color: orange;
+}
+
+.error {
+    color: red;
+}

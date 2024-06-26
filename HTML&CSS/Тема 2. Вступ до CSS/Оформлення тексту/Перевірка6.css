@@ -1,0 +1,16 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.downloads .link {
+    text-decoration: none;
+}
+
+.downloads .link:hover,
+.downloads .link:focus {
+    text-decoration: underline;
+}
+
+.downloads .plan-name {
+    color: #ff1744;
+}

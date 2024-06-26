@@ -1,0 +1,46 @@
+/* flex-direction: row | row-reverse | column | column-reverse */
+/* row — вісь починається зліва й закінчується праворуч. Це значення за замовчуванням. 
+row-reverse — вісь починається праворуч й закінчується ліворуч. 
+column — головна вісь стає вертикально, початок зверху та кінець знизу. 
+column-reverse — головна вісь розташовується вертикально, початок знизу, кінець зверху. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f9f9fd;
+}
+
+.menu {
+    display: flex;
+    gap: 8px;
+
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+    border-radius: 4px;
+    background-color: #2196f3;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.menu.reversed {
+    /*  We rotate the main axis from right to left  */
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+.menu .link {
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+}
+
+.menu .link:hover {
+    text-decoration: underline;
+}

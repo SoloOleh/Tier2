@@ -1,0 +1,13 @@
+body {
+    font-family: 'Helvetica Neue', 'Roboto', 'Verdana', sans-serif;
+    color: #2a2a2a;
+    background-color: #fafafa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tahoma';
+}
+
+ul, ol {
+    list-style-type: none;
+}

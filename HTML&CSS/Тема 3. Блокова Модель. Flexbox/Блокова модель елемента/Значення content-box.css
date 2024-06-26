@@ -1,0 +1,12 @@
+/* Ширина=width+padding-left+padding-right+border-left+border-right
+Висота=height+padding-top+padding-bottom+border-top+border-bottom */
+
+/* Фінальна ширина блока = 150px + 30px + 30px + 5px + 5px */
+.box {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #f44336;
+    padding: 30px;
+    margin: 100px;
+    background-color: #ffeb3b;
+}

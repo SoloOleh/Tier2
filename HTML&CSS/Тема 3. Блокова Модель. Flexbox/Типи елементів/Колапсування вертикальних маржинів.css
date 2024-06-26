@@ -1,0 +1,14 @@
+.box {
+    width: 200px;
+    height: 100px;
+}
+
+.top {
+    margin-bottom: 20px;
+    background-color: teal;
+}
+
+.bottom {
+    margin-top: 40px;
+    background-color: palevioletred;
+}
