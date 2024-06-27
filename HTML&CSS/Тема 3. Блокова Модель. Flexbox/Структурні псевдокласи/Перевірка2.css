@@ -1,0 +1,30 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #fff;
+    color: #212121;
+}
+
+.product-table td,
+.product-table th {
+    padding: 4px 8px;
+    border: 1px solid #212121;
+}
+
+.product-table {
+    border-collapse: collapse;
+}
+
+.product-row:nth-child(odd) {
+    background-color: #03a9f4;
+}
+
+.product-row:nth-child(even) {
+    background-color: #ffeb3b;
+}

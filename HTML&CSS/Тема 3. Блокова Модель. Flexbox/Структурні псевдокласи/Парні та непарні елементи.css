@@ -1,0 +1,17 @@
+.list-item:nth-child(2n) {
+    background-color: orange;
+}
+
+/* Аналогічно використовуючи псевдонім */
+.list-item:nth-child(even) {
+    background-color: blue;
+}
+
+.list-item:nth-child(2n + 1) {
+    background-color: orange;
+}
+
+/* Аналогічно використовуючи псевдонім */
+.list-item:nth-child(odd) {
+    background-color: orange;
+}

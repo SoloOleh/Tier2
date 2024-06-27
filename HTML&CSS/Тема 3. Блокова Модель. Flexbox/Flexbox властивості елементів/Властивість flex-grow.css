@@ -1,0 +1,39 @@
+/* flex-grow: частка (0)
+
+flex-grow: 1 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+    background-color: #edf2f7;
+}
+
+.container {
+    display: flex;
+    gap: 8px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    flex-basis: 200px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.sidebar,
+.content {
+    height: 300px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}

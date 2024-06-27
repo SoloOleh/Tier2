@@ -1,0 +1,18 @@
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-item {
+    padding: 4px;
+    background-color: #228be6;
+}
+
+.list-item {
+    text-align: center;
+}
+
+.list-item:not(:last-child) {
+    margin-bottom: 20px;
+}

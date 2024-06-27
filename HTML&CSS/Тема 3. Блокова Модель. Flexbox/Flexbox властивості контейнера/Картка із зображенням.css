@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #edf2f7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.card.flex-start-aligned {
+    align-items: flex-start;
+}
+
+.card+.card {
+    margin-top: 20px;
+}

@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #212121;
+    font-size: 14px;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.benefits {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.benefits .item {
+    width: calc((100% - 32px) / 3);
+}

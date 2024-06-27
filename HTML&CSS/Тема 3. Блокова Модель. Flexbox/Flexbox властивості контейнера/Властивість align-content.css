@@ -1,0 +1,6 @@
+/* align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch */
+/* 
+stretch — рядки рівномірно розтягуються, щоб зайняти все місце. Значення за замовчуванням. 
+flex-start — рядки притискаються до старту cross axis. 
+flex-end — рядки притискаються до кінця cross axis. 
+center — рядки центруються на осі cross axis. */

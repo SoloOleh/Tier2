@@ -1,0 +1,24 @@
+.card {
+    display: flex;
+    gap: 10px;
+    width: 300px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+
+    /* Appearance properties of the icon */
+    background-image: url("https://cdn-icons-png.flaticon.com/512/616/616438.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: orangered;
+    }
+
+.text {
+  margin: 0;
+}

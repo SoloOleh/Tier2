@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #212121;
+    font-size: 14px;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.downloads .link {
+    text-decoration: none;
+}
+
+.downloads .link:hover,
+.downloads .link:focus {
+    text-decoration: underline;
+}
+
+.downloads {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}

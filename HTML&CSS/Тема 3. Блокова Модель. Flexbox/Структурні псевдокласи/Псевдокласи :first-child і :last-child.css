@@ -1,0 +1,32 @@
+.list-item {
+    color: blue;
+    ;
+}
+
+.list-item:first-child {
+    color: red;
+}
+
+.list-item:last-child {
+    color: green;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-item {
+    padding: 4px;
+    background-color: #228be6;
+}
+
+.list-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.list-item:last-child {
+    margin-bottom: 0;
+}
