@@ -1,0 +1,95 @@
+/* Загальні стилі для скидання */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.header,
+.footer {
+    border-bottom: 1px solid #e4e4e4;
+    /* Нижня рамка для хедера */
+}
+
+/* Flexbox для хедера */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.header-address {
+    display: flex;
+    gap: 20px;
+}
+
+/* Flexbox для секцій */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feature-item {
+    flex: 1 1 calc((100% - 60px) / 4);
+    /* Припустимо, що 4 елементи в ряд */
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-member {
+    flex: 1 1 calc((100% - 90px) / 4);
+    /* Припустимо, що 4 елементи в ряд */
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    flex: 1 1 calc((100% - 150px) / 3);
+    /* Припустимо, що 3 елементи в ряд */
+    border-bottom: 1px solid #e4e4e4;
+    /* Нижня рамка для карток портфоліо */
+}

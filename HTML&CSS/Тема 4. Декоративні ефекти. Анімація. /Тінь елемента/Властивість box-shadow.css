@@ -1,0 +1,41 @@
+/* box-shadow: <x-offset><y-offset><blur><spread><color> */
+/* 
+x-offset — горизонтальне зміщення. Позитивне значення зміщує тінь праворуч від блоку, негативне – ліворуч. Обов'язкове значення.
+y-offset — вертикальне зміщення. Позитивне значення зміщує тінь вниз, негативне - вгору. Обов'язкове значення.
+blur — радіус розмиття. Чим більше значення, тим сильніше розмита тінь. Необов'язкове значення.
+spread — радіус поширення. Позитивне значення збільшує тінь, негативне — зменшує. Необов'язкове значення.
+color — колір тіні. Можна використовувати будь-який формат запису кольору. Необов'язкове значення. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f9f9fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.post {
+    position: relative;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 4px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+
+    box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.post-title {
+    margin-top: 0;
+}
+
+.post-text {
+    margin-bottom: 0;
+}

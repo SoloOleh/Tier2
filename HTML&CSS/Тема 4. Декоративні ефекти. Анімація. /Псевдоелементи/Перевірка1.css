@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #212121;
+    font-size: 14px;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.hero {
+    padding: 48px;
+    border-radius: 12px;
+    background-color: #212121;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 255, 0.15),
+            rgba(0, 0, 255, 0.15)),
+        url(https://ac.goit.global/fullstack/html-css-v2/module-4/autochecks/m04-human.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.hero-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 1.333;
+    letter-spacing: 3px;
+}
+
+.hero-title::before,
+.hero-title::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.hero-title:hover::before,
+.hero-title:hover::after {
+    background-color: #03a9f4;
+}

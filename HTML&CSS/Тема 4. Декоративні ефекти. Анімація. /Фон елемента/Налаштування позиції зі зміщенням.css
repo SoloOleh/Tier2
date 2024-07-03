@@ -1,0 +1,44 @@
+/* backrgound-position: x зміщення-x y зміщення-y */
+
+/* backrgound-position: right 30px bottom 20px; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #2a2a2a;
+    background-color: #fafafa;
+}
+
+.hero {
+    min-height: 250px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2a2a2a;
+    background-image: url(https://cdn.pixabay.com/photo/2020/07/06/01/33/forest-5375005_1280.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.hero.center {
+    background-position: center;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.text {
+    margin: 0;
+}
+
+.hero+.hero {
+    margin-top: 10px;
+}

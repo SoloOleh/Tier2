@@ -1,0 +1,13 @@
+/* background-position: x y; */
+
+/* Поставить фонове зображення по центру */
+/* background-position: 50% 50%; */
+
+/* Поставить фонове зображення 100px від лівого краю та 200px від верху */
+/* background-position: 100px 200px; */
+
+/* Поставить фонове зображення у нижній правий кут */
+/* background-position: right bottom; */
+
+/* Поставить фонове зображення у верхній лівий кут */
+/* background-position: left top; */

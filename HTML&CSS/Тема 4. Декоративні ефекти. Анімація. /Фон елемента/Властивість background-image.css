@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+  background-color: #fafafa;
+}
+
+.hero {
+  border: 2px solid #fd7e14;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2a2a2a;
+  background-image: url(https://cdn.pixabay.com/photo/2020/07/06/01/33/forest-5375005_1280.jpg);
+  color: #fff;
+  text-align: center;
+  background-position: center;
+}
+
+.hero.no-image {
+  background-image: none;
+}
+
+.hero.no-bg {
+  background-color: initial;
+}
+
+.hero + .hero {
+  margin-top: 10px;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.text {
+  margin: 0;
+  text-transform: uppercase;
+}

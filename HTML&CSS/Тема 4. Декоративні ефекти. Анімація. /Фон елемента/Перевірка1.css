@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #212121;
+    font-size: 14px;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.hero-title {
+    margin-bottom: 24px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.333;
+    letter-spacing: 3px;
+}
+
+.hero {
+    padding: 48px;
+    border-radius: 12px;
+    background-color:#212121;
+    color:#fff;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.15), rgba(0, 0, 255, 0.15)),
+        url(https://ac.goit.global/fullstack/html-css-v2/module-4/autochecks/m04-human.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  
+}

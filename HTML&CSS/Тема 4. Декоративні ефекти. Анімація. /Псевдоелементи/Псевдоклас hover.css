@@ -1,0 +1,28 @@
+.box::before {
+    content: 'Цей текст у before';
+    color: orange;
+}
+
+.box::after {
+    content: 'Цей текст у after';
+    color: teal;
+}
+
+✅
+
+/* Коректно оформлені загальні стилі */
+.box::before,
+.box::after {
+    font-size: 30px;
+}
+
+
+/* Застосувати стилі до псевдоелементу .box::before при ховері на елемент .box */
+.box:hover::before {
+    background-color: green;
+}
+
+/* Застосувати стилі до псевдоелементу.box::after при ховері на елемент .box */
+.box:hover::after {
+    background-color: tomato;
+}

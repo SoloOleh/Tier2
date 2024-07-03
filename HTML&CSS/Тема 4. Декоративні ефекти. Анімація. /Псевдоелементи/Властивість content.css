@@ -1,0 +1,14 @@
+.box::before {
+  content: 'Цей текст у before';
+  color: orange;
+}
+
+.box::after {
+  content: 'Цей текст у after';
+  color: teal;
+}
+
+✅ /* Коректно оформлені загальні стилі */
+.box::before, .box::after {
+	font-size: 30px;
+}

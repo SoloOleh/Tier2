@@ -1,0 +1,45 @@
+/* background-size: auto | значення | cover | contain */
+
+/* Вихідні розміри зображення, значення за замовчуванням */
+/* background-size: auto auto; */
+
+/* Ширина 200px, висота буде пропорційна */
+/* background-size: 200px; */
+
+/* Ширина 200px, висота 300px */
+/* background-size: 200px 300px; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #2a2a2a;
+    background-color: #fafafa;
+}
+
+.hero {
+    min-height: 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2a2a2a;
+    background-image: url(https://cdn.pixabay.com/photo/2020/07/06/01/33/forest-5375005_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.text {
+    margin: 0;
+}
