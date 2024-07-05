@@ -1,0 +1,27 @@
+.tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.pane {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 4px 8px;
+    border: 1px solid #212121;
+    max-width: 440px;
+    cursor: pointer;
+}
+
+.icon {
+    transition: transform 150ms ease-in-out;
+}
+
+.pane:hover .icon {
+    transform: rotate(90deg);
+}

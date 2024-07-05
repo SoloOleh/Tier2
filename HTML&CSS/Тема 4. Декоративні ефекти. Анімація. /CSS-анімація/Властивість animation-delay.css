@@ -1,0 +1,6 @@
+.box:hover {
+    animation-name: changeBgColor;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}

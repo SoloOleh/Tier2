@@ -1,0 +1,13 @@
+@keyframes changeBgColor {
+    0% {
+        background-color: teal;
+    }
+
+    50% {
+        background-color: orange;
+    }
+
+    100% {
+        background-color: deepskyblue;
+    }
+}

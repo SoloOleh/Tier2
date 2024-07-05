@@ -1,0 +1,29 @@
+.cat-list {
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-family: sans-serif;
+}
+
+.cat-list-item p {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.cat-list-item img {
+    display: block;
+    max-width: 100%;
+}
+
+.cat-list-item {
+    border: 1px solid #212121;
+    border-radius: 4px;
+    padding: 4px;
+    transition: transform 250ms ease-in-out;
+}
+
+.cat-list-item:hover {
+    transform: scale(1.1);
+}

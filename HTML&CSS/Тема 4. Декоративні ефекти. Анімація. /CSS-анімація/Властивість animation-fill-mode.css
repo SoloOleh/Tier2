@@ -1,0 +1,61 @@
+/* animation-fill-mode: none | forwards | backwards | both */
+/* none — стилі анімації впливають на елемент тільки під час анімації. До та після анімації елемент знаходиться у своєму початковому стані. Це значення за замовчуванням. 
+forwards — стилі,застосовані в кінці анімації,застосовуються до елемента після завершення анімації. 
+backwards — початкові стилі анімації будуть застосовані до елемента ще до старту анімації. 
+both — поєднує forwards і backwards, стилі застосовуються до та після анімації. */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.box:hover {
+    animation-name: changeBgColor;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+.box:nth-child(1) {
+    /* Default value  */
+    animation-fill-mode: none;
+}
+
+.box:nth-child(2) {
+    animation-fill-mode: forwards;
+}
+
+.box:nth-child(3) {
+    animation-fill-mode: backwards;
+}
+
+.box:nth-child(4) {
+    animation-fill-mode: both;
+}
+
+@keyframes changeBgColor {
+    0% {
+        background-color: teal;
+    }
+
+    50% {
+        background-color: orange;
+    }
+
+    100% {
+        background-color: deepskyblue;
+    }
+}
