@@ -1,0 +1,46 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 300px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.group-title {
+    width: 100%;
+    font-weight: 700;
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+input {
+    padding: 4px;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

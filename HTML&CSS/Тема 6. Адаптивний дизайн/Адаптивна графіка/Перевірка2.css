@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #212121;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.infocard {
+    max-width: 300px;
+    border: 1px solid #212121;
+}
+
+.content {
+    padding: 8px;
+}
+
+.title,
+.descr {
+    margin: 0;
+}
+

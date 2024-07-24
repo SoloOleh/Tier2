@@ -1,0 +1,13 @@
+@media print {
+    body {
+        color: green;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    /* ... */
+}
+
+@media (min-width: 400px) {
+    /* ... */
+}

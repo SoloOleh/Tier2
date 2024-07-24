@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #212121;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+    line-height: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px;
+    border: 1px solid #212121;
+    max-width: 300px;
+}
+
+.form-button {
+    align-self: flex-start;
+}
+
+.form-input {
+    padding: 4px;
+    color: #212121;
+    border: 1px solid #212121;
+    border-radius: 4px;
+}
+
+.form-input::placeholder {
+    color: #616161;
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    transition: color 150ms ease-in-out;
+}
+
+.form-label:focus-within {
+    color: #009688;
+}

@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.toast{
+  display: inline-flex;
+  padding: 8px;
+  background-color: #2196f3;
+  color:#fff;
+  border-radius:4px;
+}
+
+@media (min-width: 600px) {
+  .toast {
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .toast {
+    padding: 16px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  .toast {
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .toast {
+    border: 2px solid #212121
+  }
+}

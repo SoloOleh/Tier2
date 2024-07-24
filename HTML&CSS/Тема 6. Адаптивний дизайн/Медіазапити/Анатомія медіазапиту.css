@@ -1,0 +1,19 @@
+/* Base style with white color. */
+body {
+    background-color: #fff;
+}
+
+/* The color green is at 600px or wider. */
+@media (min-width: 600px) {
+    body {
+        background-color: #4caf50;
+    }
+}
+
+/* The color indigo is at 900px or wider. */
+@media (min-width: 900px) {
+    body {
+        background-color: indigo;
+    }
+}
+

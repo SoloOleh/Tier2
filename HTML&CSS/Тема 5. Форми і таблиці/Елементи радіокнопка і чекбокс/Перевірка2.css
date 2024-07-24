@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #212121;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+    line-height: inherit;
+}
+
+.quiz-form {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.quiz-form p {
+    margin: 0;
+}
+
+/* .quiz-form input:checked
+{
+    box-shadow: 0 0 0 2px orange
+} */
+
+.quiz-form input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 2px orange
+}
+
+.quiz-form input[type="checkbox"]:checked + label {
+    color: darkorange;
+}

@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="Групування полів.css" />
+
+<form class="form">
+  <fieldset class="form-group">
+    <legend class="group-title">Enter your contact details</legend>
+    <label class="form-label">
+      Name
+      <input type="text" name="username" />
+    </label>
+    <label class="form-label">
+      Email
+      <input type="email" name="email" />
+    </label>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <legend class="group-title">Your favourite programming language</legend>
+    <div class="form-field">
+      <input type="checkbox" name="language" value="python" id="python" />
+      <label class="form-label" for="python">Python</label>
+    </div>
+    <div class="form-field">
+      <input type="checkbox" name="language" value="js" id="js" />
+      <label class="form-label" for="js">JavaScript</label>
+    </div>
+    <div class="form-field">
+      <input type="checkbox" name="language" value="ruby" id="ruby" />
+      <label class="form-label" for="ruby">Python</label>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <legend class="group-title">I want to receive</legend>
+    <div class="form-field">
+      <input type="checkbox" name="newsletter" value="weekly" id="weekly" />
+      <label class="form-label" for="weekly">The weekly newsletter</label>
+    </div>
+    <div class="form-field">
+      <input type="checkbox" name="newsletter" value="offers" id="offers" />
+      <label class="form-label" for="offers">Offers from the company</label>
+    </div>
+    <div class="form-field">
+      <input
+        type="checkbox"
+        name="newsletter"
+        value="associated_offers"
+        id="associated_offers"
+      />
+      <label class="form-label" for="associated_offers"
+        >Offers from associated companies</label
+      >
+    </div>
+  </fieldset>
+
+  <button type="submit">Subscribe</button>
+</form>

@@ -1,0 +1,6 @@
+/* CSS-правила нижче застосовуються, коли ширина в'юпорта більше або дорівнює 800px */
+@media (min-width: 800px) {
+    body {
+        background-color: orange;
+    }
+}

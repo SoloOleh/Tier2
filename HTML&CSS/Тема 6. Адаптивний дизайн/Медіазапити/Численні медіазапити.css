@@ -1,0 +1,17 @@
+body {
+    background-color: white;
+}
+
+/* Застосовується коли ширина в'юпорта менше або дорівнює 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* Застосовується коли ширина в'юпорта більше або дорівнює 800px */
+@media (min-width: 800px) {
+    body {
+        background-color: orange;
+    }
+}

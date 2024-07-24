@@ -1,0 +1,32 @@
+/* ❌ ПОГАНО */
+.box {
+    border: 1px solid black;
+}
+
+@media (min-width: 768px) {
+    .box {
+        border: none;
+        box-shadow: 2px 2px 4px 2px black;
+    }
+}
+
+@media (min-width: 1024px) {
+    .box {
+        box-shadow: none;
+    }
+}
+
+
+/* ✅ ДОБРЕ */
+@media (max-width: 767px) {
+    .box {
+        border: 1px solid black;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .box {
+        box-shadow: 2px 2px 4px 2px black;
+    }
+}
+

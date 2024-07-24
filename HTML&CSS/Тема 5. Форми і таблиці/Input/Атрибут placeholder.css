@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 4px;
+    font-family: inherit;
+}

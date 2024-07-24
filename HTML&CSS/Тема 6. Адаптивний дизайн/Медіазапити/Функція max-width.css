@@ -1,0 +1,6 @@
+/* CSS-правила застосовуються, коли ширина в'юпорта менше або дорівнює 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: green;
+    }
+}

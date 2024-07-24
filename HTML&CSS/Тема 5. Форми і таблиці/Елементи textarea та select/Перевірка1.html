@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="Перевірка1.css" />
+
+<form class="form" name="issue_report_form" autocomplete="off">
+  <label class="form-label">
+    Your name
+    <input
+      class="form-input"
+      type="text"
+      name="username"
+      placeholder="Andrew Berger"
+      autofocus
+    />
+  </label>
+
+  <label class="form-label">
+    Topic
+    <input
+      class="form-input"
+      type="text"
+      name="topic"
+      placeholder="Short issue summary"
+    />
+  </label>
+
+  <label class="form-label">
+    Description
+    <textarea
+      class="form-input"
+      name="description"
+      placeholder="Please provide a detailed issue description"
+      rows="5"
+    ></textarea>
+  </label>
+
+  <label class="form-label">
+    Urgency
+    <select class="form-input" name="urgency">
+      <option value="0">Light</option>
+      <option value="1">Medium</option>
+      <option value="2">High</option>
+      <option value="3">Critical</option>
+    </select>
+  </label>
+
+  <button class="form-button" type="submit">Submit an issue</button>
+</form>

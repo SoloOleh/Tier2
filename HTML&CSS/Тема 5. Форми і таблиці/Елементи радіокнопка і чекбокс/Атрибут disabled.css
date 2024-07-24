@@ -1,0 +1,38 @@
+.btn {
+    display: inline-flex;
+    padding: 12px 24px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: cyan;
+    color: black;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: orange;
+}
+
+.btn:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+/* Example styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #2a2a2a;
+    font-family: sans-serif;
+    line-height: 1.5;
+}

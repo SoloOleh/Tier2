@@ -1,0 +1,17 @@
+<form>
+  <label>
+    Username
+    <input type="text" name="username" />
+  </label>
+  <button type="submit">Submit feedback</button>
+</form>
+
+<!-- Якщо елемент форми не вкладено в label, необхідно явно зв'язати їх через:
+атрибут id елемента та
+атрибут for мітки -->
+
+<form>
+  <label for="username">Username</label>
+  <input type="text" name="username" id="username" />
+  <button type="submit">Submit feedback</button>
+</form>
