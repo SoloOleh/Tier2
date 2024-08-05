@@ -1,0 +1,162 @@
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="contact-title">Leave an <span>application</span></h2>
+    <p class="contact-description">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <div class="contact-card-wrapper">
+      <div class="contact-info-card">
+        <div class="contact-card-promo">
+          <div class="contact-card-promo-logo">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/contact/img-1@1x.webp 1x,
+                  ./img/contact/img-1@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./img/contact/img-1@1x.png 1x,
+                  ./img/contact/img-1@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                src="./img/contact/img-1@1x.png"
+                alt="Happy little girl photo"
+                width="492"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="contact-promo">
+            <h3 class="contact-promo-title">1000</h3>
+            <p class="contact-promo-description">
+              of our online English language lessons! This journey has been full
+              of discovery, growth and unforgettable moments, and we are happy
+              to share this joyful event with you.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-card">
+        <form class="contact-form" name="contact-us">
+          <div class="contact-form-field">
+            <div class="contact-input-wrapper">
+              <input
+                class="contact-form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Name"
+                pattern="\w{1,60}"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-form-field">
+            <div class="contact-input-wrapper">
+              <input
+                class="contact-form-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-form-field">
+            <div class="contact-input-wrapper">
+              <input
+                class="contact-form-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                placeholder="Phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="123-456-7890"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-form-field">
+            <div class="contact-input-wrapper">
+              <textarea
+                class="contact-form-comment"
+                rows="4"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Comment"
+              ></textarea>
+            </div>
+          </div>
+          <div class="contact-teacher">
+            <p class="contact-teacher-title">Choose a teacher</p>
+            <ul class="teacher-list">
+              <li class="teacher-list-item">
+                <label class="teacher-item-label" for="teacher-1"
+                  >Maria
+                  <input
+                    type="radio"
+                    id="teacher-1"
+                    name="teacher"
+                    value="teacher-1"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li class="teacher-list-item">
+                <label class="teacher-item-label" for="teacher-2"
+                  >Artem
+                  <input
+                    type="radio"
+                    id="teacher-2"
+                    name="teacher"
+                    value="teacher-2"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li class="teacher-list-item">
+                <label class="teacher-item-label" for="teacher-3"
+                  >Ilona
+                  <input
+                    type="radio"
+                    id="teacher-3"
+                    name="teacher"
+                    value="teacher-3"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li class="teacher-list-item">
+                <label class="teacher-item-label" for="teacher-4"
+                  >Volodymyr
+                  <input
+                    type="radio"
+                    id="teacher-4"
+                    name="teacher"
+                    value="teacher-4"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-send" type="submit">Send</button>
+        </form>
+        <p class="form-agreement-text">
+          By clicking on “Send” button, you agree to our Privacy Policy, and
+          allow Promodo to use this information for marketing purposes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
