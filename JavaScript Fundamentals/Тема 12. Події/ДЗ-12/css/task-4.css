@@ -1,0 +1,59 @@
+body {
+    font-family: Montserrat;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.login-form {
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000000;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #808080;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover {
+    border-color: #000000;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #2E2F42;
+    outline: none;
+}
+
+button {
+    width: auto;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    transition: background-color 0.3s;
+    color: white;
+    background-color: #4e75ff;
+}
+
+button:hover {
+    background-color: #6C8CFF;
+}

@@ -1,0 +1,39 @@
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.widget {
+    text-align: left;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.color {
+    font-weight: normal;
+}
+
+button {
+    width: auto;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    transition: background-color 0.3s;
+    color: white;
+    background-color: #4e75ff;
+}
+
+button:hover {
+    background-color: #6C8CFF;
+}
