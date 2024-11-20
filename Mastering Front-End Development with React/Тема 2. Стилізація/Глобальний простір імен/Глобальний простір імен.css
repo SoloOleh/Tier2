@@ -1,0 +1,10 @@
+/* FirstComponent.css */
+.text {
+    color: red;
+    font-size: 24px;
+}
+
+/* SecondComponent.css */
+.text {
+    color: blue;
+}
