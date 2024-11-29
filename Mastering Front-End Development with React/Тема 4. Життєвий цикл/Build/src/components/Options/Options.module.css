@@ -1,0 +1,30 @@
+.options {
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* .button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e0e0e0;
+}
+
+.buttonReset {
+    padding: 10px 20px;
+    background-color: #ffcccc;
+    border: 1px solid #ff6666;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonReset:hover {
+    background-color: #ff9999;
+} */
