@@ -1,13 +1,13 @@
-import TaskList from '../TaskList/TaskList';
-import initialTasks from '../../tasks.json';
-import Form from '../Form/Form';
-import Filter from '../Filter/Filter';
-import css from './App.module.css';
-import { useState } from 'react';
+import TaskList from "../TaskList/TaskList";
+import initialTasks from "../../tasks.json";
+import Form from "../Form/Form";
+import Filter from "../Filter/Filter";
+import css from "./App.module.css";
+import { useState } from "react";
 
 export default function App() {
   const [tasks, setTasks] = useState(initialTasks);
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState("");
 
   const addTask = (newTask) => {
     setTasks((prevTasks) => {
