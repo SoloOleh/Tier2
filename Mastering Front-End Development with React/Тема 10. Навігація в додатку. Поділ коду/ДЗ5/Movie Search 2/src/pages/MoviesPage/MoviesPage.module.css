@@ -1,0 +1,165 @@
+/* .container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.listItem:hover {
+  transform: scale(1.05);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movieTitle {
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: #555;
+} */
+
+/* .container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movieTitle {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+} */
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}

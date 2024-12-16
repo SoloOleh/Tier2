@@ -29,17 +29,17 @@ axios.defaults.baseURL = 'https://670e94f73e71518616552504.mockapi.io';
 
 //* with axios
 
-// async function getBooks() {
-//   const { data } = await axios.get('/books');
-//   return data;
-// }
+async function getBooks() {
+  const { data } = await axios.get('/books');
+  return data;
+}
 
-// try {
-//   const books = await getBooks();
-//   console.log(books);
-// } catch (err) {
-//   console.log(err);
-// }
+try {
+  const books = await getBooks();
+  console.log(books);
+} catch (err) {
+  console.log(err);
+}
 
 // getBooks().then(console.log).catch(console.log);
 
@@ -80,12 +80,12 @@ axios.defaults.baseURL = 'https://670e94f73e71518616552504.mockapi.io';
 
 //* with axios
 
-// async function addNewBook(book) {
-//   const body = { ...book, createdAt: new Date() };
+async function addNewBook(book) {
+  const body = { ...book, createdAt: new Date() };
 
-//   const res = await axios.post('/books', body);
-//   return res;
-// }
+  const res = await axios.post('/books', body);
+  return res;
+}
 
 // try {
 //   const res = await addNewBook({
@@ -134,21 +134,20 @@ axios.defaults.baseURL = 'https://670e94f73e71518616552504.mockapi.io';
 
 //* with axios
 
-async function updateBookById(id, fieldsToUpdate) {
-  const res = await axios.put(`books/${id}`, fieldsToUpdate);
-  return res;
+function updateBookById(id, fieldsToUpdate) {
+  return axios.put(`books/${id}`, fieldsToUpdate);
 }
 
-try {
-  const res = await updateBookById(7, {
-    genres: ['Fiction', 'Psyhology'],
-    rating: 10,
-  });
+// try {
+//   const res = await updateBookById(7, {
+//     genres: ['Fiction', 'Psyhology'],
+//     rating: 10,
+//   });
 
-  console.log(res);
-} catch (err) {
-  console.log(err);
-}
+//   console.log(res);
+// } catch (err) {
+//   console.log(err);
+// }
 
 /*
  * Delete (DELETE)
@@ -175,8 +174,8 @@ try {
 
 //* with axios
 
-// function deleteBookById(id) {
-//   return axios.delete(`books/${id}`);
-// }
+function deleteBookById(id) {
+  return axios.delete(`books/${id}`);
+}
 
-// deleteBookById(6).then(console.log).catch(console.error);
+deleteBookById(6).then(console.log).catch(console.error);

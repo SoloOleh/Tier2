@@ -1,0 +1,77 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+/* nav a.active {
+  color: red;
+  font-weight: bold;
+} */
+
+/* Header navigation */
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Простір між кнопками */
+  padding: 20px;
+  background-color: #f8f9fa; /* Світлий фон для хедера */
+  border-bottom: 1px solid #ddd;
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 20px; /* Розмір кнопок */
+  border-radius: 8px; /* Скруглені краї */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navLink:hover {
+  background-color: #007bff; /* Синій фон при наведенні */
+  color: white; /* Білий текст при наведенні */
+}
+
+.navLink.active {
+  background-color: #ff4d4d; /* Червоний фон для активної кнопки */
+  color: white; /* Білий текст для активної кнопки */
+}
