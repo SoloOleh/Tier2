@@ -1,0 +1,6 @@
+Для початку необхідно додати розширення інструментів розробника у ваш браузер:
+https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+
+
+npm install @redux-devtools/extension
+
