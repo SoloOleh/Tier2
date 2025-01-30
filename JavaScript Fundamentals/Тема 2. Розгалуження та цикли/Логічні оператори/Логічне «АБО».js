@@ -19,7 +19,6 @@ console.log(false || 0); // 0
 console.log(null || ""); // ""
 console.log("" || null); // null
 
-
 const a = 5;
 console.log(a < 10 || a > 30); // true || false -> true
 
@@ -29,14 +28,12 @@ console.log(b < 10 || b > 30); // false || true -> true
 const c = 20;
 console.log(c - 20 || c * 2); // 0 || 40 -> 40
 
-
 const screenWidth = 700;
 const sm = 320;
 const md = 768;
 const lg = 1200;
 
-if(screenWidth <= sm || screenWidth > md) {
-	console.log("Mobile or Desktop screen");
+if (screenWidth <= sm || screenWidth > md) {
+  console.log("Mobile or Desktop screen");
   // у консолі буде пусто, оскільки жодна з умов не перетворилась на true
 }
-

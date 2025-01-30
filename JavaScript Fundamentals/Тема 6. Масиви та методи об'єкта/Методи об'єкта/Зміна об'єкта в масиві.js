@@ -12,5 +12,5 @@ const bookShelf = {
   },
 };
 
-changeRating("The Mist", 9);
-changeRating("The Last Kingdom", 4);
+bookShelf.changeRating("The Mist", 9);
+bookShelf.changeRating("The Last Kingdom", 4);

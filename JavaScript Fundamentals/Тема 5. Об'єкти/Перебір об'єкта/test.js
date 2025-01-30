@@ -1,23 +1,24 @@
-const apartment = {
-  imgUrl: "https://via.placeholder.com/640x480",
-  descr: "Spacious apartment in the city center",
-  rating: 4.7,
-  price: 5000,
-  tags: ["premium", "promoted", "top", "trusted"],
-  owner: {
-    name: "Henry Sibola",
-    phone: "982-126-1588",
-    email: "henry.carter@aptmail.com",
-  },
-};
+// function countProps(object) {
+//   let propCount = 0;
 
-const keys = Object.keys(apartment);
-console.log(keys);
+//   for (const key in object) {
+//     if (object.hasOwnProperty(key)) {
+//       propCount += 1;
+//     }
+//   }
 
-const values = Object.values(apartment);
-console.log(values);
+//   return propCount;
+// }
 
-for (const key in apartment) {
-  console.log(key); // Ключ
-  console.log(apartment[key]); // Значення властивості з таким ключем
+function countProps(object) {
+  let propCount = 0;
+  const keys = Object.keys(object);
+  for (key of keys) {
+    if (object.hasOwnProperty(key)) {
+      propCount += 1;
+    }
+  }
+  return propCount;
 }
+
+console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));

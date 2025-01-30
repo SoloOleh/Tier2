@@ -5,12 +5,14 @@ function getProductPrice(productName) {
     { name: "Droid", price: 400, quantity: 7 },
     { name: "Grip", price: 1200, quantity: 9 },
   ];
-  for (product of products) {
+
+  for (const product of products) {
     if (product.name === productName) {
-      console.log(product.price);
       return product.price;
     }
   }
+  return null;
 }
 
-getProductPrice("Radar");
+console.log(getProductPrice("Radar"));
+console.log(getProductPrice("Engine"));

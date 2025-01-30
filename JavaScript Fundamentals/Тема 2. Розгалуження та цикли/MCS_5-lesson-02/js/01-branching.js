@@ -19,15 +19,15 @@ if(умова) {
 }
 */
 
-// console.log("Before");
+// console.log('Before');
 
-// if(5 > 30){
-//   console.log("x > y");
+// if (5 > 30) {
+//   console.log('x > y');
 // } else {
-//   console.log("x < y");
+//   console.log('x < y');
 // }
 
-// console.log("After");
+// console.log('After');
 
 /**
  * -----------------------------
@@ -112,10 +112,12 @@ else {
 ? Перепишіть конструкцію if з використанням тернарного оператора.
 */
 
-const numA = 4;
-const numB = 2;
+// const numA = 4;
+// const numB = 2;
 
-// const result = numA + numB < 4 ? 'Мало' : numA + numB > 4 ? 'Багато';
+// const result = numA + numB < 4 ? 'Мало' : 'Багато';
+
+// const result = numA + numB < 4 ? 'Мало' : numA + numB === 4 ? 'Рівно' : 'Багато';
 
 // if (numA + numB < 4) {
 //   result = 'Мало';
@@ -123,7 +125,7 @@ const numB = 2;
 //   result = 'Багато';
 // }
 
-console.log(result);
+// console.log(result);
 
 /*
 ?  Перепишіть if..else за допомогою декількох тернарних операторів.

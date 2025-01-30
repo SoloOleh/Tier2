@@ -33,3 +33,11 @@ function checkStorage(storage, item) {
     return "Sorry! We are out of stock!";
   }
 }
+
+function checkStorage(storage, item) {
+  if (storage.includes(item.toLowerCase())) {
+    return `${item.toLowerCase()} is available to order!`;
+  } else {
+    return "Sorry! We are out of stock!";
+  }
+}

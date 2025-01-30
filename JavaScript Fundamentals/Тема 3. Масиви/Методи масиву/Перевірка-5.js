@@ -27,3 +27,14 @@ function getSlice(array, value) {
 
   return array.slice(0, index + 1); // Повертаємо підмасив від початку і до включно знайденого елемента
 }
+
+function getSlice(array, value) {
+  const valueIndex = array.indexOf(value);
+  if (valueIndex >= 0) {
+    return array.slice(0, valueIndex + 1);
+  } else if (valueIndex === -1) {
+    return [];
+  }
+}
+
+// getSlice(["Mango", "Poly", "Ajax"], "Poly") повертає ["Mango", "Poly"]

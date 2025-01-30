@@ -18,8 +18,8 @@ apartment.location = {
   city: "Kingston",
 };
 
-console.log(apartment);
+// apartment.location = {}; // Створюємо порожній об'єкт location
+// apartment.location.country = "Jamaica"; // Додаємо властивість country
+// apartment.location.city = "Kingston"; // Додаємо властивість city
 
-apartment.location = {}; // Створюємо порожній об'єкт location
-apartment.location.country = "Jamaica"; // Додаємо властивість country
-apartment.location.city = "Kingston"; // Додаємо властивість city
+console.log(apartment);

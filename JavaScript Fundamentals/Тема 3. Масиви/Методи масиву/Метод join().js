@@ -5,6 +5,7 @@ console.log(words.join("-")); // 'JavaScript-is-amazing'
 
 function transformString(string) {
   const words = string.split("_");
+  console.log(words);
   return words.join("-");
 }
 
