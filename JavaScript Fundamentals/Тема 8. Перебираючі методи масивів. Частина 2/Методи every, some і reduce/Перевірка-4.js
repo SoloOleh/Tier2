@@ -5,6 +5,10 @@ const players = [
   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
 ];
 
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => {
+//   return total + player.playtime / player.gamesPlayed;
+// }, 0);
+
 const totalAveragePlaytimePerGame = players.reduce(
   (total, player) => total + player.playtime / player.gamesPlayed,
   0

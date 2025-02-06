@@ -81,6 +81,10 @@ users = [
 //   return result;
 // }
 
+// const getUsersWithAge = (users, minAge, maxAge) => {
+//   return users.filter((user) => (user.age >= minAge) & (user.age <= maxAge));
+// };
+
 // const getUsersWithAge = (users, minAge, maxAge) =>
 //   users.filter((user) => user.age >= minAge && user.age <= maxAge);
 

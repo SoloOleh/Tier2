@@ -1,15 +1,3 @@
-// v1
-// const getTotalBalanceByGender = (clients, gender) => {
-//   let totalBalance = 0;
-//   for (const client of clients) {
-//     if (client.gender === gender) {
-//       totalBalance += client.balance;
-//     }
-//   }
-//   return totalBalance;
-// };
-
-// v2
 // const getTotalBalanceByGender = (users, gender) => {
 //   const filteredGender = users.filter((user) => user.gender === gender);
 //   const TotalBalanceByGender = filteredGender.reduce((total, user) => {
@@ -18,16 +6,10 @@
 //   return TotalBalanceByGender;
 // };
 
-// v3
-// const getTotalBalanceByGender = (users, gender) =>
-//   users
-//     .filter((user) => user.gender === gender)
-//     .reduce((total, user) => total + user.balance, 0);
-
-const getTotalBalanceByGender = (clients, gender) =>
-  clients
-    .filter((client) => client.gender === gender)
-    .reduce((totalBalance, client) => totalBalance + client.balance, 0);
+const getTotalBalanceByGender = (users, gender) =>
+  users
+    .filter((user) => user.gender === gender)
+    .reduce((total, user) => total + user.balance, 0);
 
 const clients = [
   {

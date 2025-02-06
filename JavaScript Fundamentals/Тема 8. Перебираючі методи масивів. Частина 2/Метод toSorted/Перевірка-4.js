@@ -41,3 +41,18 @@ console.log(sortedByAscendingRating);
 
 const sortedByDescentingRating = books.toSorted((a, b) => b.rating - a.rating);
 console.log(sortedByDescentingRating);
+
+// const sortedByAuthorName = books.toSorted((firstBook, secondBook) =>
+//   firstBook.author.localeCompare(secondBook.author)
+// );
+
+// const sortedByReversedAuthorName = books.toSorted((firstBook, secondBook) =>
+//   secondBook.author.localeCompare(firstBook.author)
+// );
+// const sortedByAscendingRating = books.toSorted(
+//   (firstBook, secondBook) => firstBook.rating - secondBook.rating
+// );
+
+// const sortedByDescentingRating = books.toSorted(
+//   (firstBook, secondBook) => secondBook.rating - firstBook.rating
+// );

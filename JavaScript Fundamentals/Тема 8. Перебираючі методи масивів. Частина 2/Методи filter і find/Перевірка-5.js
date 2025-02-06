@@ -22,6 +22,7 @@ const AUTHOR = "Robert Sheckley";
 
 const bookWithTitle = (books) =>
   books.find((book) => book.title === BOOK_TITLE);
+// функція з неявним поверненням
 
 const bookByAuthor = books.find((book) => book.author === AUTHOR);
 

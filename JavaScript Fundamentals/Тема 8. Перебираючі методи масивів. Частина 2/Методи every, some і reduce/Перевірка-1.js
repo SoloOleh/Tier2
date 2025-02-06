@@ -65,3 +65,7 @@ users = [
 ];
 
 const isEveryUserActive = (users) => users.every((user) => user.isActive);
+
+// const isEveryUserActive = (users) => {
+//   return users.every((user) => user.isActive);
+// };

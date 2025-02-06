@@ -33,3 +33,22 @@ function changeEvenClassic(numbers, value) {
 }
 
 console.log(changeEvenClassic([1, 2, 3, 4, 5], 10)); // ==> [1, 12, 3, 14, 5]
+
+function changeEven(numbers, value) {
+  const newArray = numbers.map((num) => {
+    if (num % 2 === 0) {
+      return num + value;
+    }
+    return num;
+  });
+  return newArray;
+}
+
+function changeEven(numbers, value) {
+  return numbers.map((num) => {
+    if (num % 2 === 0) {
+      return num + value;
+    }
+    return num;
+  });
+}

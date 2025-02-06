@@ -63,6 +63,10 @@ users = [
     gender: "female",
   },
 ];
+
+// const getUserWithEmail = (users, email) => {
+//   return users.find((user) => user.email === email);
+// };
 const getUserWithEmail = (users, email) =>
   users.find((user) => user.email === email);
 

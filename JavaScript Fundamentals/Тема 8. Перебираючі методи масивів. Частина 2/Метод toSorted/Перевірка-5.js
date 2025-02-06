@@ -34,3 +34,10 @@ const names = books
 //   .toSorted();
 
 console.log(names);
+
+// const names = books
+//   .filter((book) => book.rating >= MIN_BOOK_RATING)
+//   .map((book) => book.author)
+//   .toSorted((firstAuthor, secondAuthor) =>
+//     firstAuthor.localeCompare(secondAuthor)
+//   );

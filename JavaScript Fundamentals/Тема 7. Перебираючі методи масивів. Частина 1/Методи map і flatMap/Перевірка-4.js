@@ -16,5 +16,9 @@ const books = [
   },
 ];
 
+// const genres = books.flatMap((book) => {
+//   return book.genres;
+// });
+
 const genres = books.flatMap((book) => book.genres);
 console.log(genres); // ["adventure", "history", "fiction", "horror", "mysticism"].

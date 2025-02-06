@@ -64,6 +64,12 @@ const users = [
   },
 ];
 
+// const calculateTotalBalance = (users) => {
+//   return users.reduce((total, user) => {
+//     return total + user.balance;
+//   }, 0);
+// };
+
 const calculateTotalBalance = (users) =>
   users.reduce((total, user) => total + user.balance, 0);
 

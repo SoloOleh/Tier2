@@ -18,5 +18,9 @@ const books = [
   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
 ];
 
+// const titles = books.map((book) => {
+//   return book.title;
+// });
+
 const titles = books.map((book) => book.title);
 console.log(titles); // ["The Last Kingdom", "Beside Still Waters", "The Dream of a Rid

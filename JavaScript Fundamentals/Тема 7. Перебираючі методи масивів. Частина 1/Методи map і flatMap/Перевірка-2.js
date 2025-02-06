@@ -1,5 +1,9 @@
 const planets = ["Earth", "Mars", "Venus", "Jupiter"];
 
+// const planetsLengths = planets.map((planet) => {
+//   return planet.length;
+// });
+
 const planetsLengths = planets.map((planet) => planet.length);
 console.log(planetsLengths); // [5, 4, 5, 7]
 
