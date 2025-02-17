@@ -27,14 +27,14 @@ const checkboxPolicyEl = document.querySelector('.js-policy-checkbox');
 ? фокусу отримує alert з повідомленням-привітанням
  */
 
-// inputEl.addEventListener('blur', handleInputBlur);
+inputEl.addEventListener('blur', handleInputBlur);
 
-// function handleInputBlur(event) {
-//   const userName = event.target.value;
-//   console.log('=== BLUR ===');
-//   console.log(`Hello, ${userName}!`);
-//   console.log('======');
-// }
+function handleInputBlur(event) {
+  const userName = event.target.value;
+  console.log('=== BLUR ===');
+  console.log(`Hello, ${userName}!`);
+  console.log('======');
+}
 
 inputEl.addEventListener('change', handleInputChange);
 
@@ -45,9 +45,9 @@ function handleInputChange(event) {
   console.log('======');
 }
 
-// /*
-// ? Після того, як користувач активує чекбокс, виводиться alert
-// */
+/*
+? Після того, як користувач активує чекбокс, виводиться alert
+*/
 
 checkboxPolicyEl.addEventListener('change', handleCheckboxChange);
 

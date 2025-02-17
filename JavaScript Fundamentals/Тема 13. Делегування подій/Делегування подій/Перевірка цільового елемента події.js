@@ -6,6 +6,7 @@ colorPalette.addEventListener("click", selectColor);
 // This is where delegation «magic» happens
 function selectColor(event) {
   if (event.target.nodeName !== "BUTTON") {
+    console.log("користувач клікнув між кнопками");
     return;
   }
 

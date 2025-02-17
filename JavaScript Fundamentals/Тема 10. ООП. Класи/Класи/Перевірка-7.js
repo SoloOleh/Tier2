@@ -19,6 +19,7 @@ class Car {
   //     }
   //   }
   // }
+
   set price(newPrice) {
     if (newPrice < Car.maxPrice) {
       this.#price = newPrice;

@@ -58,3 +58,27 @@ const galleryMarkup = images
   .join('');
 
 gallery.insertAdjacentHTML('beforeend', galleryMarkup);
+
+// v2
+
+/*
+<li class="gallery-item">
+  <a href="#">
+    <img src="" alt="" width="" height="">
+  </a>
+</li>
+*/
+
+// const createGalleryItem = image => `<li class="gallery-item">
+//   <a href="#">
+//     <img src="${image.url}" alt="${image.alt}" width="700" height="460">
+//   </a>
+// </li>`;
+
+// const galleryEl = document.querySelector('.gallery');
+
+// const galleryMarkup = images.map(createGalleryItem).join('');
+
+// console.log(galleryMarkup);
+
+// galleryEl.insertAdjacentHTML('beforeend', galleryMarkup);

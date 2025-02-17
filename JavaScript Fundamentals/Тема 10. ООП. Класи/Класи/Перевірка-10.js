@@ -21,6 +21,7 @@ class Admin extends User {
   };
   constructor(params) {
     super(params.email);
+    this.access = params.access;
   }
 }
 

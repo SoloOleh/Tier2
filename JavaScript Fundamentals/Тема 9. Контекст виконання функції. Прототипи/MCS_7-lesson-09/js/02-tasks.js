@@ -8,25 +8,25 @@
 
 //? Що буде виведено в консоль
 
-// const book = {
-//   title: 'React for beginners',
+const book = {
+  title: "React for beginners",
 
-//   showThis() {
-//     console.log('showThis -> this', this);
-//   },
+  showThis() {
+    console.log("showThis -> this", this);
+  },
 
-//   showTitle() {
-//     console.log('showTitle -> this.title', this.title);
-//   },
-// };
+  showTitle() {
+    console.log("showTitle -> this.title", book.title);
+  },
+};
 
-// book.showThis(); // book (2)
+book.showThis(); // book (2)
 
 // const outerShowThis = book.showThis;
 
 // outerShowThis(); // undefined (3/1)
 
-// const outerShowTitle = book.showTitle;
+book.showTitle();
 
 // outerShowTitle(); // Type Error (3/1)
 

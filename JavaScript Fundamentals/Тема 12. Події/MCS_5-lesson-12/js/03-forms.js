@@ -14,10 +14,8 @@ formEl.addEventListener('submit', handleFormSubmit);
 
 function handleFormSubmit(event) {
   event.preventDefault(); // зупиняє поведінку браузера за замовчуванням (наприклад, перезавантаження сторінки після сабміту)
-  console.log(event);
 
   const formElements = event.target.elements;
-  console.log(formElements);
 
   const formData = {
     email: formElements.email.value,
