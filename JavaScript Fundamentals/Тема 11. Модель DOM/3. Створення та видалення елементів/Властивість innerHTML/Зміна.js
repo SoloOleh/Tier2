@@ -1,23 +1,24 @@
-const title = document.querySelector(".article .title");
-title.innerHTML = 'New and <span class="accent">improved</span> title';
-console.log(title.innerHTML);
+// const title = document.querySelector(".article .title");
+// title.innerHTML = 'New and <span class="accent">improved</span> title';
+// console.log(title.innerHTML);
 
-const technologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
-const list = document.querySelector(".list");
+// const technologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
+// const list = document.querySelector(".list");
 
-console.log(list.innerHTML);
+// console.log(list.innerHTML);
 
-const markup = technologies
-  .map((technology) => `<li class="list-item">${technology}</li>`)
-  .join("");
+// const markup = technologies
+//   .map((technology) => `<li class="list-item">${technology}</li>`)
+//   .join("");
 
-// Check the console, you'll see a single string with HTML tags
-console.log(markup);
+// // Check the console, you'll see a single string with HTML tags
+// console.log(markup);
 
-// Adding all the markup in one operation
-list.innerHTML = markup;
+// // Adding all the markup in one operation
+// list.innerHTML = markup;
+// // list.append(markup);
 
-console.log(list.innerHTML);
+// console.log(list.innerHTML);
 
 const article = document.querySelector(".article");
 const htmlString = `<p class="article-text">Nullam quis ante. Vestibulum dapibus nunc ac augue. In consectetuer turpis ut velit.</p>

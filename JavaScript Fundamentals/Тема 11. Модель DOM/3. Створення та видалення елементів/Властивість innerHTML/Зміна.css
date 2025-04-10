@@ -1,42 +1,36 @@
 body {
-    margin: 16px;
+  margin: 16px;
 }
 
 .accent {
-    color: tomato;
-    text-decoration: underline;
+  color: tomato;
+  text-decoration: underline;
 }
 
-
 body {
-    padding: 16px;
+  padding: 16px;
 }
 
 .list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .list-item {
-    padding: 8px;
-    border-width: 2px;
-    border-style: dashed;
+  padding: 8px;
+  border-width: 2px;
+  border-style: dashed;
 }
 
 .list-item:nth-child(even) {
-    border-color: tomato;
-}
-
-
-body {
-    padding: 16px;
+  border-color: tomato;
 }
 
 .article {
-    max-width: 320px;
+  max-width: 320px;
 }
 
 .article-text {
-    color: tomato;
+  color: tomato;
 }

@@ -22,3 +22,14 @@ changeColorButton.addEventListener('click', () => {
 //   backround.textContent = getRandomHexColor();
 //   widgetPage.style.backgroundColor = `${backround.textContent}`;
 // });
+
+// const widget = document.querySelector('.widget');
+// const color = document.querySelector('.color');
+// const button = document.querySelector('.change-color');
+
+// button.addEventListener('click', handleClick);
+
+// function handleClick(event) {
+//   color.textContent = getRandomHexColor();
+//   widget.style.backgroundColor = color.textContent;
+// }

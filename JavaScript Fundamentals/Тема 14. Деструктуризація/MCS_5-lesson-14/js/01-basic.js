@@ -16,7 +16,6 @@
 //   age: 30,
 // };
 
-// const { firstName, lastName, age: userAge, isAdmin = false } = user;
 // const firstName = user.firstName;
 // const lastName = user.lastName;
 // const userAge = user.age;
