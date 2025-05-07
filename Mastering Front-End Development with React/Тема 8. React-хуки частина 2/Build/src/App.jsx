@@ -1,13 +1,34 @@
-// src/components/App.jsx
+import { useState, useRef } from "react";
+// ComponentA.jsx
+const ComponentA = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-import { UserMenu } from "./UserMenu";
+  const openModal = () => setIsModalOpen(true);
 
-const App = () => {
+  const closeModal = () => setIsModalOpen(false);
+
   return (
-    <div>
-      <UserMenu />
-    </div>
+    <>
+      <button onClick={openModal}>Open modal</button>
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
+    </>
   );
 };
 
-export default App;
+// ComponentB.jsx
+const ComponentB = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const openSidebar = () => setIsSidebarOpen(true);
+
+  const closeSidebar = () => setIsSidebarOpen(false);
+
+  return (
+    <>
+      <button onClick={openSidebar}>Open sidebar</button>
+      <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+    </>
+  );
+};
+
+export { ComponentA, ComponentB };

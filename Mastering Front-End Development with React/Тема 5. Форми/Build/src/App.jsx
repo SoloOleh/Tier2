@@ -1,26 +1,22 @@
-import { useState } from "react";
+// import LoginForm from "./LoginForm";
+import LoginForm from "./LoginFormControled";
+// import SearchBar from "./SearchBar";
+// import LangSwitcher from "./LangSwitcher";
+// import Checkbox from "./Checkbox";
 
 const App = () => {
-  const [hasAccepted, setHasAccepted] = useState(false);
-
-  const handleChange = (evt) => {
-    setHasAccepted(evt.target.checked);
-  };
+  // // Колбек-функція для обробки сабміту форми
+  // const handleLogin = (userData) => {
+  //   // Виконуємо необхідні операції з даними
+  //   console.log(userData);
+  // };
 
   return (
     <div>
-      <label>
-        <input
-          type="checkbox"
-          name="terms"
-          checked={hasAccepted}
-          onChange={handleChange}
-        />
-        I accept terms and conditions
-      </label>
-      <button type="button" disabled={!hasAccepted}>
-        Proceed
-      </button>
+      <LoginForm />
+      {/* <SearchBar /> */}
+      {/* <LangSwitcher /> */}
+      {/* <Checkbox /> */}
     </div>
   );
 };

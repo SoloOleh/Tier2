@@ -2,11 +2,13 @@
 // 	return <p>{item}</p>;
 // })
 
-{/* <div>
+{
+  /* <div>
 	{[1, 2, 3].map(item => {
 		return <div>{item}</div>;
 	})}
-</div> */}
+</div> */
+}
 
 // const favouriteBooks = [
 //   { id: "id-1", name: "JS for beginners" },
@@ -33,8 +35,7 @@
 //   );
 // };
 
-
-// з ключами 
+// з ключами
 
 // const favouriteBooks = [
 //   { id: "id-1", name: "JS for beginners" },
@@ -61,19 +62,18 @@
 //   );
 // };
 
-
 // можна використовувати індекси масиву
-// Використання індексів для ключів — це крайній випадок. В переважній більшості випадків дані мають унікальні ідентифікатори або інші властивості. 
+// Використання індексів для ключів — це крайній випадок. В переважній більшості випадків дані мають унікальні ідентифікатори або інші властивості.
 const favouriteBooks = [
   { name: "JS for beginners" },
   { name: "React basics" },
-  { name: "React Router overview" }
+  { name: "React Router overview" },
 ];
 
 const BookList = ({ books }) => (
   <ul>
-	{books.map((book, index) => {
-	  return <li key={index}>{book.name}</li>;
-	})}
+    {books.map((book, index) => {
+      return <li key={index}>{book.name}</li>;
+    })}
   </ul>
 );

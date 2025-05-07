@@ -1,10 +1,10 @@
-// src/main.jsx
-import ReactDOM from "react";
-import App from "./App";
-import { UserProvider } from "./userContext";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { ComponentA, ComponentB } from "./App.jsx";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <UserProvider>
-    <App />
-  </UserProvider>
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <ComponentA />
+    <ComponentB />
+  </StrictMode>
 );

@@ -1,8 +1,8 @@
-body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #212121;
-  background-color: #fafafa;
+@import "node_modules/modern-normalize/modern-normalize.css";
+
+:root {
+  background-color: #242424;
+  color: white;
 }
 
 img {
