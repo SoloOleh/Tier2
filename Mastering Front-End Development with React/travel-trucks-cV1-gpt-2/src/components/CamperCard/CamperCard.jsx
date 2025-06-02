@@ -231,8 +231,8 @@ const CamperCard = ({ camper }) => {
 
         <Link
           to={`/catalog/${camper.id}`}
-          target="_blank"
-          rel="noopener noreferrer"
+          // target="_blank"
+          // rel="noopener noreferrer"
           className={styles.showMoreLink}
         >
           <Button variant="primary" size="medium">
