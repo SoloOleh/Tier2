@@ -9,11 +9,6 @@ const initialState = {
     kitchen: false,
     TV: false,
     bathroom: false,
-    water: false,
-    gas: false,
-    radio: false,
-    refrigerator: false,
-    microwave: false,
   },
 };
 

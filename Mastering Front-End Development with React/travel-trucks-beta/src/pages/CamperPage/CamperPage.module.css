@@ -1,7 +1,7 @@
 .camperPage {
   flex: 1;
   padding: var(--spacing-2xl) 0;
-  background-color: var(--color-gray);
+  background-color: var(--color-white);
 }
 
 .loaderWrapper {

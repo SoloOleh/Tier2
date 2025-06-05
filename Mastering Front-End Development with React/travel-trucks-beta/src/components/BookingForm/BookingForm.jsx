@@ -24,16 +24,13 @@ const BookingForm = ({ camperName, camperId }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate form
     if (!formData.name || !formData.email || !formData.bookingDate) {
       toast.error("Please fill in all required fields");
       return;
     }
 
-    // Show success message
     toast.success(`Booking for ${camperName} has been submitted successfully!`);
 
-    // Reset form
     setFormData({
       name: "",
       email: "",

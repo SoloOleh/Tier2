@@ -1,19 +1,17 @@
 .header {
+  padding: 24px 0;
   background-color: var(--color-gray);
   border-bottom: 1px solid var(--color-border-light);
   position: sticky;
   top: 0;
   z-index: 100;
-  backdrop-filter: blur(10px);
-  background-color: rgba(247, 247, 247, 0.95);
 }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-lg) 0;
-  gap: var(--spacing-xl);
+  gap: 32px;
 }
 
 .logo {
@@ -30,4 +28,28 @@
   width: 136px;
   height: 16px;
   color: var(--color-text);
+}
+
+@media (min-width: 1440px) {
+  .content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 450px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 0;
+  }
+
+  .content {
+    gap: 16px;
+  }
 }

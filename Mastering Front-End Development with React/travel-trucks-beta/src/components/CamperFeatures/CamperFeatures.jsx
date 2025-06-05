@@ -25,6 +25,16 @@ const CamperFeatures = ({ camper }) => {
       if (detail === "form") {
         value = getFormLabel(value);
         label = "Form";
+      } else if (
+        detail === "length" ||
+        detail === "width" ||
+        detail === "height"
+      ) {
+        value = `${value} m`;
+      } else if (detail === "tank") {
+        value = `${value} l`;
+      } else if (detail === "consumption") {
+        value = `${value}/100km`;
       }
 
       return { label, value };
@@ -35,26 +45,24 @@ const CamperFeatures = ({ camper }) => {
   const details = getVehicleDetails();
 
   return (
-    <div className={styles.features}>
-      <div className={styles.section}>
-        <div className={styles.grid}>
-          {features.map((feature) => {
-            const icon = getFeatureIcon(feature);
-            const value = camper[feature];
-            const label = formatFeatureName(feature, value);
+    <div className={styles.featuresContainer}>
+      <div className={styles.featuresGrid}>
+        {features.map((feature) => {
+          const icon = getFeatureIcon(feature);
+          const value = camper[feature];
+          const label = formatFeatureName(feature, value);
 
-            return (
-              <div key={feature} className={styles.feature}>
-                <Icon name={icon} size={20} />
-                <span>{label}</span>
-              </div>
-            );
-          })}
-        </div>
+          return (
+            <div key={feature} className={styles.feature}>
+              <Icon name={icon} size={20} />
+              <span>{label}</span>
+            </div>
+          );
+        })}
       </div>
 
-      <div className={styles.section}>
-        <h3 className={styles.sectionTitle}>Vehicle details</h3>
+      <div className={styles.vehicleDetailsSection}>
+        <h3 className={styles.detailsTitle}>Vehicle details</h3>
         <div className={styles.divider} />
         <dl className={styles.detailsList}>
           {details.map(({ label, value }) => (

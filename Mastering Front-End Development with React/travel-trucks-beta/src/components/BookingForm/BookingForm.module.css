@@ -1,27 +1,40 @@
 .bookingForm {
+  display: flex;
+  width: 100%;
+  max-width: 641px;
+  padding: 44px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
   background-color: var(--color-white);
-  border-radius: var(--radius-sm);
-  padding: var(--spacing-2xl);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .title {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 600;
+  line-height: 24px;
   color: var(--color-text);
-  margin-bottom: var(--spacing-sm);
+  margin: 0;
+  align-self: flex-start;
 }
 
 .subtitle {
-  font-size: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
   color: var(--color-text-secondary);
-  margin-bottom: var(--spacing-lg);
+  margin: -16px 0 0 0;
+  align-self: flex-start;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: 14px;
+  width: 100%;
 }
 
 .field {
@@ -32,29 +45,31 @@
 .input,
 .textarea {
   width: 100%;
-  padding: var(--spacing-md);
+  padding: 18px;
   background-color: var(--color-inputs);
-  border: 1px solid transparent;
-  border-radius: var(--radius-sm);
-  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
   color: var(--color-text);
   transition: all var(--transition-fast);
 }
 
 .input::placeholder,
 .textarea::placeholder {
-  color: var(--color-text-secondary);
+  color: rgba(16, 24, 40, 0.6);
 }
 
 .input:hover,
 .textarea:hover {
-  border-color: var(--color-border-light);
+  background-color: var(--color-white);
+  outline: 1px solid var(--color-border-light);
 }
 
 .input:focus,
 .textarea:focus {
   background-color: var(--color-white);
-  border-color: var(--color-main);
+  outline: 1px solid var(--color-main);
 }
 
 .dateWrapper {
@@ -63,31 +78,42 @@
 
 .calendarIcon {
   position: absolute;
-  right: var(--spacing-md);
+  right: 18px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--color-text-secondary);
+  color: var(--color-text);
   pointer-events: none;
 }
 
 .textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 114px;
   font-family: inherit;
 }
 
-/* Date input styling */
 input[type="date"] {
   position: relative;
+  color-scheme: light;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
-  right: var(--spacing-md);
+  right: 18px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
   opacity: 0;
   width: 20px;
   height: 20px;
+}
+
+.form button {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .bookingForm {
+    width: 100%;
+    padding: 32px 24px;
+  }
 }

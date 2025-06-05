@@ -27,7 +27,6 @@ const campersSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      // Fetch campers
       .addCase(fetchCampers.pending, (state) => {
         state.isLoading = true;
         state.error = null;
@@ -49,7 +48,6 @@ const campersSlice = createSlice({
         state.isLoading = false;
         state.error = action.payload;
       })
-      // Fetch camper by id
       .addCase(fetchCamperById.pending, (state) => {
         state.isLoading = true;
         state.error = null;

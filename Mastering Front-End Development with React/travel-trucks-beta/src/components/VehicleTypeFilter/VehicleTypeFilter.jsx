@@ -15,7 +15,8 @@ const VehicleTypeFilter = () => {
 
   return (
     <div className={styles.vehicleTypeFilter}>
-      <h4 className={styles.subtitle}>Vehicle type</h4>
+      <h3 className={styles.subtitle}>Vehicle type</h3>
+      <div className={styles.divider} />
       <div className={styles.grid}>
         {VEHICLE_TYPES.map(({ value, label, icon }) => (
           <button
@@ -25,6 +26,7 @@ const VehicleTypeFilter = () => {
             className={`${styles.option} ${
               selectedForm === value ? styles.active : ""
             }`}
+            aria-pressed={selectedForm === value}
           >
             <Icon name={icon} size={32} />
             <span>{label}</span>

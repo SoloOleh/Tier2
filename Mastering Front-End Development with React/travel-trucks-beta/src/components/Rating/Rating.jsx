@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Icon from "../Icon/Icon";
 import styles from "./Rating.module.css";
 
-const Rating = ({ rating, reviews, showStars = true }) => {
+const Rating = ({ rating, reviews, showStars = false }) => {
   const renderStars = () => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -23,7 +23,11 @@ const Rating = ({ rating, reviews, showStars = true }) => {
 
   return (
     <div className={styles.rating}>
-      {showStars && <div className={styles.stars}>{renderStars()}</div>}
+      {showStars ? (
+        <div className={styles.stars}>{renderStars()}</div>
+      ) : (
+        <Icon name="icon-star" size={16} className={styles.star} />
+      )}
       <span className={styles.text}>
         {rating.toFixed(1)} ({reviews} Reviews)
       </span>
