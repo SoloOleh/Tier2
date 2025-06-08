@@ -1,126 +1,135 @@
-# Travel Trucks - Camper Rental Service
+# TravelTrucks - Camper Rental Service
 
-A modern web application for browsing and booking camper rentals, built with React, Redux Toolkit, and Vite.
+A modern web application for searching and renting campers with a wide selection of vehicles and convenient filtering system.
 
 ## 🚀 Features
 
-- Browse camper catalog with advanced filtering
-- Search by location, vehicle type, and equipment
-- Add campers to favorites (persisted in localStorage)
-- View detailed information about each camper
-- Read customer reviews and ratings
-- Book campers with an intuitive form
-- Responsive design for desktop devices
+- **Homepage** with attractive hero banner and call-to-action button
+- **Campers catalog** with filtering by location, vehicle type, and equipment
+- **Detailed camper page** with interactive photo gallery (lightbox), reviews, and booking form
+- **Advanced filtering system** with multiple criteria selection
+- **Favorites list** with localStorage persistence (survives page refresh)
+- **"Load More" functionality** for progressive loading of camper cards
+- **Responsive design** for desktop, tablet, and mobile devices
+- **Toast notifications** for successful booking confirmations
 
-## 🛠️ Technologies Used
+## 🛠 Technologies
 
-- **React** - UI library
-- **Redux Toolkit** - State management
-- **React Router** - Routing
-- **Axios** - HTTP requests
-- **CSS Modules** - Styling
-- **Vite** - Build tool
-- **React Toastify** - Notifications
+- **React 18** - UI library with modern hooks
+- **Redux Toolkit** - modern state management solution
+- **React Router v6** - routing with nested routes support
+- **Axios** - HTTP client for API requests
+- **CSS Modules** - scoped styling for components
+- **React Toastify** - beautiful user notifications
+- **Vite** - fast build tool with hot reload
+- **PropTypes** - component props validation
+- **Yet Another React Lightbox** - elegant image gallery viewer
 
-## 📦 Installation
+## 📦 Installation and Setup
 
-1. Clone the repository:
+### System Requirements
 
-```bash
-git clone https://github.com/yourusername/travel-trucks.git
-cd travel-trucks
-```
+- Node.js version 18.0.0 or higher
+- npm version 8.0.0 or higher (or yarn)
 
-2. Install dependencies:
+### Step-by-step Guide
 
-```bash
-npm install
-```
+1. **Clone the repository:**
 
-3. Create a `.env` file in the root directory:
+   ```bash
+   git clone https://github.com/your-username/travel-trucks.git
+   cd travel-trucks
+   ```
 
-```
-VITE_API_URL=https://66b1f8e71ca8ad33d4f5f63e.mockapi.io
-```
+2. **Install dependencies:**
 
-4. Start the development server:
+   ```bash
+   npm install
+   # or if you're using yarn
+   yarn install
+   ```
 
-```bash
-npm run dev
-```
+3. **Start development server:**
 
-5. Open [http://localhost:5173](http://localhost:5173) in your browser
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## 🏗️ Build
+4. **Open browser at:** `http://localhost:5173`
 
-To build the project for production:
+### Additional Commands
 
-```bash
-npm run build
-```
+- **Build for production:**
 
-The built files will be in the `dist` directory.
+  ```bash
+  npm run build
+  ```
 
-## 📂 Project Structure
+- **Preview production build:**
 
-```
-src/
-├── assets/         # Static assets (icons, images)
-├── components/     # Reusable components
-├── pages/          # Page components
-├── redux/          # Redux store, slices, and selectors
-├── services/       # API services
-├── styles/         # Global styles
-└── utils/          # Utility functions and constants
-```
+  ```bash
+  npm run preview
+  ```
 
-## 🌐 API Endpoints
+- **Lint code:**
+  ```bash
+  npm run lint
+  ```
 
-The application uses the following API endpoints:
+## 🎯 Implementation Features
 
-- `GET /campers` - Get all campers (with pagination and filters)
-- `GET /campers/:id` - Get camper details by ID
+### State Management (Redux Toolkit)
 
-## 🎨 Features Overview
+The project uses modern Redux Toolkit with three main slices:
 
-### Home Page
+- **`campers`** - stores campers list, current camper, loading state
+- **`filters`** - active search filters (location, vehicle type, equipment)
+- **`favorites`** - list of favorite camper IDs (persisted in localStorage)
 
-- Hero section with call-to-action
-- Navigation to catalog
+### API Integration
 
-### Catalog Page
+- All API requests are separated into a service layer (`src/services/api.js`)
+- Uses axios for HTTP requests
+- Implements error handling and loading states
+- Supports filtering and pagination
 
-- Filter panel with location, equipment, and vehicle type filters
-- Camper cards with key information
-- Load more pagination
-- Add to favorites functionality
+### Component Architecture
 
-### Camper Details Page
+- Each component has its own folder with JSX file and CSS module
+- Uses functional components with hooks
+- PropTypes for props validation
+- DRY principle - avoiding code duplication
 
-- Image gallery
-- Detailed specifications
-- Customer reviews
-- Booking form
+### Routing
+
+- React Router v6 with nested routes support
+- Lazy loading for pages optimization
+- 404 error handling (redirect to home)
+- SPA support in production (vercel.json)
+
+## 🌐 API
+
+The project uses MockAPI for demonstration purposes:
+
+**Base URL:** `https://66b1f8e71ca8ad33d4f5f63e.mockapi.io`
+
+**Endpoints:**
+
+- `GET /campers` - get list of all campers
+- `GET /campers/:id` - get details of specific camper
+
+**Filtering:** Implemented on frontend with support for:
+
+- Location search (case-insensitive)
+- Vehicle type filtering (panelTruck, fullyIntegrated, alcove)
+- Equipment filtering (AC, transmission, kitchen, TV, bathroom)
 
 ## 🚀 Deployment
 
-This project is configured for deployment on Vercel. The `vercel.json` file is included with proper routing configuration.
+The project is ready for deployment on cloud platforms.
 
-## 📱 Browser Support
+**Important:** Includes `vercel.json` for proper client-side routing.
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License.
+**Thank you for using TravelTrucks! 🚐✨**

@@ -96,7 +96,12 @@ const CamperCard = ({ camper }) => {
           })}
         </div>
 
-        <Link to={`/catalog/${camper.id}`} className={styles.showMoreLink}>
+        <Link
+          to={`/catalog/${camper.id}`}
+          className={styles.showMoreLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button variant="primary" size="medium">
             Show more
           </Button>
