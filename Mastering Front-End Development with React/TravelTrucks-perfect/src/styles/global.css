@@ -11,7 +11,7 @@
   --color-inputs: #f7f7f7;
   --color-filters: #f2f4f7;
   --color-border: #e0e0e0;
-  --color-border-light: #f2f4f7;
+  --color-border-light: rgba(16, 24, 40, 0.2);
   --color-white: #ffffff;
   --color-rating: #ffc531;
   --color-badge-bg: #f2f4f7;
@@ -121,6 +121,8 @@ img {
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {

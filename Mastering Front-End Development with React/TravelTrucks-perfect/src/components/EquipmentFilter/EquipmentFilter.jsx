@@ -19,18 +19,24 @@ const EquipmentFilter = () => {
       <div className={styles.divider} />
       <div className={styles.grid}>
         {VEHICLE_EQUIPMENT.map(({ value, label, icon }) => (
-          <button
+          <label
             key={value}
-            type="button"
-            onClick={() => handleEquipmentToggle(value)}
             className={`${styles.option} ${
               equipment[value] ? styles.active : ""
             }`}
-            aria-pressed={equipment[value]}
           >
-            <Icon name={icon} size={32} />
-            <span>{label}</span>
-          </button>
+            <input
+              type="checkbox"
+              className={styles.checkbox}
+              checked={equipment[value]}
+              onChange={() => handleEquipmentToggle(value)}
+              aria-label={label}
+            />
+            <div className={styles.content}>
+              <Icon name={icon} size={32} />
+              <span>{label}</span>
+            </div>
+          </label>
         ))}
       </div>
     </div>

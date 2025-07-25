@@ -77,12 +77,20 @@ const BookingForm = ({ camperName }) => {
           <div className={styles.field}>
             <div className={styles.dateWrapper}>
               <input
-                type="date"
+                type="text"
                 name="bookingDate"
                 value={formData.bookingDate}
                 onChange={handleChange}
                 placeholder="Booking date*"
                 className={styles.input}
+                onFocus={(e) => {
+                  e.target.type = "date";
+                }}
+                onBlur={(e) => {
+                  if (!e.target.value) {
+                    e.target.type = "text";
+                  }
+                }}
                 required
               />
               <Icon

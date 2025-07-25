@@ -22,6 +22,19 @@
 }
 
 .option {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,31 +45,30 @@
   background-color: var(--color-white);
   border: 1px solid var(--color-border-light);
   border-radius: 10px;
-  cursor: pointer;
   transition: all var(--transition-fast);
   color: var(--color-text);
 }
 
-.option:hover {
+.option:hover .content {
   border-color: var(--color-main);
 }
 
-.option.active {
+.option.active .content {
   border-color: var(--color-main);
 }
 
-.option svg {
+.content svg {
   width: 32px;
   height: 32px;
   color: var(--color-text);
   transition: color var(--transition-fast);
 }
 
-.option.active svg {
+.option.active .content svg {
   color: var(--color-main);
 }
 
-.option span {
+.content span {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.25;

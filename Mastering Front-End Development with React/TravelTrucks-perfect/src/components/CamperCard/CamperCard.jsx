@@ -33,7 +33,7 @@ const CamperCard = ({ camper }) => {
   const features = getFeatures();
 
   return (
-    <article className={styles.card}>
+    <div className={styles.card}>
       <div className={styles.imageWrapper}>
         <img
           src={camper.gallery?.[0]?.thumb || "/placeholder.jpg"}
@@ -107,7 +107,7 @@ const CamperCard = ({ camper }) => {
           </Button>
         </Link>
       </div>
-    </article>
+    </div>
   );
 };
 
