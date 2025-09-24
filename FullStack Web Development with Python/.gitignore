@@ -1,24 +1,36 @@
+# IDE
 .idea/
-#.Ignore files and directories that are specific to my project
-#Ignore python cache
-__pycache__/
 
-#Ignore local settings
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local settings
 local_settings.py
 
-#Ignore logs
+# Logs
 logs/
+*.log
 
-#Ignore database
+# SQLite databases
 db.sqlite3
+test.db
 
-#Ignore python dependencies
+# Virtual environments
 venv/
 env/
 ENV/
 
-**/*~.*
-**/*.*~
-*.*~
+# Editor backups
+*~ 
+*.swp
+*.swo
 
-/pytest-*
+# Pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Alembic migrations cache (якщо є)
+alembic/versions/*.pyc

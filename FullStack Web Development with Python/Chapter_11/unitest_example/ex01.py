@@ -1,7 +1,9 @@
 import unittest
 
+
 def multiply_numbers(x, y):
     return x * y
+
 
 class TestMultiplication(unittest.TestCase):
     def test_multiply_two_positive_numbers(self):
@@ -16,5 +18,6 @@ class TestMultiplication(unittest.TestCase):
         result = multiply_numbers(-2, -3)
         self.assertEqual(result, 6)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

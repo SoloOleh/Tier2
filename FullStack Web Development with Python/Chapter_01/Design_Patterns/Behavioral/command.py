@@ -38,7 +38,6 @@ class Invoker:
         self._on_order = None
         self._on_email = None
 
-
     def set_on_order(self, command: Command):
         self._on_order = command
 
