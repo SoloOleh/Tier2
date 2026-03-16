@@ -1,0 +1,134 @@
+@media (max-width: 767px) {
+  .mobileNavHero {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    z-index: 500;
+  }
+
+  .slideIn {
+    transform: translateX(0);
+  }
+
+  .slideOut {
+    transform: translateX(100%);
+  }
+
+  .SideBarLink {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+
+  .sideBarImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+    z-index: 1002;
+  }
+
+  .mobileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+  }
+
+  .mobileNavHero {
+    background-color: var(--title-color);
+    color: var(--white-color);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    animation: slideIn 0.3s ease-in-out forwards;
+  }
+
+  .headerDark .mobileClose {
+    stroke: var(--white-color);
+  }
+
+  .mobileNavButtons {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .sidebarHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 8px 16px 8px;
+  }
+
+  .mobileClose {
+    background: none;
+    border: none;
+    stroke: var(--white-color);
+    color: var(--white-color);
+  }
+
+  .mobileNav .navLinkActive {
+    background: var(--text-color);
+    color: var(--white-color);
+  }
+
+  .mobileNav .navLink:focus,
+  .mobileNav .navLink:hover {
+    background: var(--inactive-color);
+    color: var(--text-color);
+  }
+
+  .mobileNavButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .mobileNavButton {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--white-color);
+    text-transform: uppercase;
+  }
+
+  @keyframes slideIn {
+    from {
+      right: -100vw;
+    }
+
+    to {
+      right: 0;
+    }
+  }
+
+  .logo {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1;
+    padding: 7px 0;
+    cursor: pointer;
+    color: var(--white-color);
+  }
+}

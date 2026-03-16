@@ -1,0 +1,34 @@
+.recipeList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 910px;
+  }
+
+}
+
+.recipeListEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.recipeListTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}

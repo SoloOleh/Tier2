@@ -1,0 +1,86 @@
+.recipesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipesContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    gap: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+  }
+}
+
+.recipesBackContainer {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.recipesBackButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  stroke: var(--text-color);
+  color: var(--text-color);
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--title-color);
+    stroke: var(--title-color);
+  }
+}
+
+.recipesBackIcon {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: inherit;
+
+  @media screen and (min-width: 768px) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.recipesBackText {
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.paginationWrapper {
+  margin-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+}

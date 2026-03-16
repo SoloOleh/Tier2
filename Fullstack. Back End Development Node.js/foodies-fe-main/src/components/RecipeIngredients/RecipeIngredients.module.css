@@ -1,0 +1,97 @@
+.section {
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    margin-top: 40px;
+  }
+}
+
+.itemTitle {
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 800;
+  color: var(--title-color);
+
+  text-align: left;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.ingredientList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: 375px) {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+.ingredientListItem {
+  display: flex;
+  font-size: 14px;
+  line-height: 143%;
+  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.ingredientListImg {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid var(--inactive-color);
+  padding: 10px;
+  border-radius: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 90px;
+    height: 90px;
+    padding: 15px;
+  }
+}
+
+.ingredientsInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
+  flex: 1;
+  min-width: 0;
+}
+
+.ingredientName,
+.ingredientMeasure {
+  font-size: 14px;
+  line-height: 1.42;
+  color: var(--title-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.ingredientMeasure {
+  color: var(--inactive-color);
+}

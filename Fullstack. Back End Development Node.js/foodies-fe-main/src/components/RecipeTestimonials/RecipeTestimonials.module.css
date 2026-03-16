@@ -1,0 +1,81 @@
+.recipeTestimonials {
+  padding-top: 50px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin: 32px 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+}
+
+.testimonialItem {
+  position: relative;
+  display: flex;
+  padding: 10px 60px 10px 10px;
+}
+
+.testimonialItem:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.testimonialItem:nth-child(even) {
+  background-color: rgb(244, 244, 244);
+}
+
+.avatarWrapper {
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.authorName {
+  font-size: 18px;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.buttonDelete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.pagination {
+  margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .pagination {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pagination {
+    margin-bottom: 120px;
+  }
+}
+
+.loaderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+}

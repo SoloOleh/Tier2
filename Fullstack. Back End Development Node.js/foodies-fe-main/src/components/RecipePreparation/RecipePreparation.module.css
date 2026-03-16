@@ -1,0 +1,45 @@
+.itemTitle {
+  margin-bottom: 20px;
+  text-align: left;
+  margin-top: 32px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.description {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--text-color);
+  margin-bottom: 32px;
+}
+
+.favoriteBtn {
+  max-width: 172px;
+  white-space: nowrap;
+}
+.buttonList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .itemTitle {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .description {
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+  .favoriteBtn {
+    max-width: 215px;
+  }
+  .buttonList {
+    flex-direction: row;
+    align-items: center;
+  }
+}

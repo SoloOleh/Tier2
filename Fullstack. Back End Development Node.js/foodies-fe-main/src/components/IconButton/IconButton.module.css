@@ -1,0 +1,63 @@
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 30px;
+  border: 1px solid var(--inactive-color);
+  background-color: transparent;
+  transition: var(--background-transition), var(--border-transition);
+}
+
+.iconButtonIcon {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: var(--text-color);
+  transition: var(--stroke-transition), var(--fill-transition);
+}
+
+.iconButtonIcon.white {
+  stroke: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .iconButton {
+    width: 42px;
+    height: 42px;
+  }
+  .iconButtonIcon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.iconButton.disabled {
+  border-color: var(--inactive-color);
+  pointer-events: none;
+}
+.iconButton.disabled .iconButtonIcon {
+  stroke: var(--inactive-color);
+}
+
+.iconButton:hover,
+.iconButton:focus {
+  cursor: pointer;
+  border-color: var(--text-color);
+  background-color: var(--text-color);
+}
+.iconButton:hover .iconButtonIcon,
+.iconButton:focus .iconButtonIcon {
+  stroke: var(--white-color);
+}
+
+.iconButton[disabled] {
+  border-color: var(--inactive-color);
+  background-color: var(--inactive-color);
+  cursor: auto;
+}
+.iconButton[disabled] .iconButtonIcon {
+  stroke: var(--white-color);
+  fill: var(--inactive-color);
+}

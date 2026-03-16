@@ -1,0 +1,529 @@
+.addRecipeForm {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+
+.formAdd {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldsGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.formGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.formCategoryCookingtime,
+.formGroupArea {
+  margin-bottom: 0;
+}
+
+.formCategory,
+.formArea,
+.formCookingtime,
+.formIngredients {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.category,
+.area,
+.cookingtime,
+.ingredients,
+.titleRecipePreparation,
+.formGroup > label {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.titleInput {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: var(--title-color);
+  font-weight: 800;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: var(--inactive-color);
+}
+
+.descriptionWrapper,
+.formQuantity,
+.textareaWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  min-height: 36px;
+  align-items: baseline;
+  border-bottom: 1px solid var(--inactive-color);
+}
+
+.textareaWrapper {
+  margin-top: 32px;
+}
+
+.description,
+.recipePreparation,
+.quantity {
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.description,
+.recipePreparation {
+  max-height: calc(20px * 16);
+  resize: none;
+  overflow-y: auto;
+  transition: height 0.2s ease;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .description,
+  .recipePreparation {
+    max-height: calc(24px * 16);
+    resize: none;
+    overflow-y: auto;
+    transition: height 0.2s ease;
+  }
+}
+
+.formRecipePreparation {
+  margin-top: 32px;
+}
+
+.timeInput {
+  width: 44px;
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.adjustIndent {
+  transform: translateX(-4px);
+}
+
+.wordsCounterInside {
+  font-size: 14px;
+  color: var(--inactive-color);
+  width: 53px;
+  text-align: end;
+}
+
+.wordsCounterActive {
+  color: var(--title-color);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.formCookingtime .addRecipeForm {
+  gap: 14px;
+}
+
+.minusButton,
+.plusButton {
+  width: 48px;
+  height: 48px;
+}
+
+.minusIcon,
+.plusIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.btnIngredient {
+  padding: 14px 20px;
+  gap: 8px;
+}
+
+.btnIngredient:hover .iconPlus {
+  stroke: var(--white-color);
+}
+
+.dropdown,
+.dropdownSearch {
+  padding: 14px;
+}
+
+.trashIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.formGroupSubmit .buttonGroup {
+  gap: 8px;
+}
+
+.trashButton {
+  width: 48px;
+  height: 48px;
+}
+
+.btnSubmit {
+  padding: 14px 32px;
+  background-color: var(--text-color);
+}
+
+.btnSubmit:hover {
+  background-color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .btnSubmit {
+    padding: 16px 39px;
+  }
+}
+
+/* ingredientList */
+.ingredientList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredientList {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .trashButton {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.ingredientCard {
+  display: grid;
+  position: relative;
+  align-items: center;
+  gap: 10px;
+  width: 155px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 768px) {
+  .ingredientCard {
+    display: grid;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+    width: 178px;
+  }
+}
+
+.ingredientImageWrapper {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid var(--inactive-color);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.ingredientImage {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredientImageWrapper {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    padding: 15px;
+  }
+  .ingredientImage {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.ingredientDetails {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredientDetails {
+    font-size: 16px;
+  }
+}
+
+.ingredientName {
+  font-weight: 500;
+  color: var(--title-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 74px;
+  white-space: nowrap;
+}
+
+.ingredientQty {
+  color: var(--inactive-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 74px;
+  white-space: nowrap;
+}
+
+.removeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  stroke: var(--title-color);
+}
+
+.iconPlus {
+  stroke: var(--title-color);
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  background-color: #fff;
+  bottom: -8px;
+  left: 15px;
+  z-index: 1;
+  padding: 0 5px;
+}
+
+.inputError {
+  border-bottom: 1px solid red;
+}
+
+@media screen and (min-width: 768px) {
+  .titleInput {
+    font-size: 24px;
+  }
+
+  .description,
+  .recipePreparation,
+  .quantity,
+  .timeInput {
+    font-size: 16px;
+  }
+
+  .timeInput {
+    width: 50px;
+  }
+
+  .category,
+  .area,
+  .cookingtime,
+  .ingredients,
+  .titleRecipePreparation,
+  .formGroup > label {
+    font-size: 20px;
+  }
+
+  .formGroup > .formCategory,
+  .formGroup > .formCookingtime,
+  .formGroup > .formIngredients,
+  .formGroup > .formQuantity,
+  .formGroup > .formArea {
+    margin-bottom: 0;
+  }
+
+  .formGroup {
+    margin-bottom: 40px;
+  }
+
+  .descriptionWrapper,
+  .formQuantity,
+  .textareaWrapper {
+    min-height: 40px;
+  }
+
+  .minusButton,
+  .plusButton {
+    width: 56px;
+    height: 56px;
+  }
+
+  .minusIcon,
+  .plusIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .formGroup.formDescription,
+  .formGroup.formCategoryCookingtime,
+  .formGroup.formGroupArea {
+    margin-bottom: 60px;
+  }
+
+  .formGroup.formIngredientsQuantity {
+    margin-bottom: 40px;
+  }
+
+  .formGroup.formCategoryCookingtime,
+  .formGroup.formIngredientsQuantity {
+    flex-direction: row;
+    gap: 19px;
+  }
+
+  .formGroup.formIngredientsQuantity {
+    align-items: end;
+  }
+
+  .formCategory,
+  .formArea,
+  .formCookingtime,
+  .formIngredients,
+  .formQuantity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 315px;
+  }
+
+  .addRecipeForm {
+    flex-direction: row;
+  }
+
+  .formGroup.formRecipePreparation {
+    margin-top: 40px;
+  }
+
+  .formGroup.formRecipePreparation {
+    margin-bottom: 80px;
+  }
+
+  .textareaWrapper {
+    margin-top: 40px;
+  }
+
+  .btnIngredient {
+    padding: 16px 32px;
+  }
+
+  .dropdown,
+  .dropdownSearch {
+    padding: 16px 18px;
+    font-size: 16px;
+    height: 56px;
+  }
+
+  .formGroup.formGroupSubmit {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .formAdd {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .wrapper {
+    margin-bottom: 0;
+  }
+
+  .titleInput {
+    font-size: 24px;
+  }
+
+  .formGroup {
+    width: 649px;
+  }
+
+  .category,
+  .area,
+  .cookingtime,
+  .ingredients,
+  .titleRecipePreparation,
+  .formGroup > label {
+    font-size: 20px;
+  }
+  .description,
+  .recipePreparation,
+  .quantity {
+    font-size: 16px;
+  }
+
+  .formCategory,
+  .formArea,
+  .formCookingtime,
+  .formIngredients,
+  .formQuantity {
+    gap: 16px;
+  }
+
+  .formCategoryCookingtime {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .formIngredientsQuantity {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 32px;
+  }
+}
+
+.loaderWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
